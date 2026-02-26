@@ -13,7 +13,7 @@ export default function Header() {
     { name: "Contact Us" },
   ];
 
-  // ✅ Search JSX (Reusable – Duplicate Removed)
+  
   const searchInput = (textColor = "", placeholderColor = "") => (
     <div className="flex items-center border-2 border-orange-400 rounded-full px-2 py-1">
       <input
@@ -67,7 +67,7 @@ export default function Header() {
             ))}
           </ul>
 
-          {/* ✅ Mobile Search (Using Same JSX) */}
+          {/* Mobile Input */}
           <div className="mt-8">
             {searchInput("text-white", "placeholder-white")}
           </div>
@@ -103,7 +103,7 @@ export default function Header() {
           {/* Right Section */}
           <div className="flex items-center gap-4">
 
-            {/* ✅ Desktop Search (Same JSX Reused) */}
+            {/* Search Button */}
             <div className="hidden md:flex">
               {searchInput()}
             </div>
