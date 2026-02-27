@@ -1,6 +1,7 @@
 import React from 'react'
 import { data } from '../CardData/CardData'
 import Button from '../../Button/Button'
+import { Link } from 'react-router'
 
 export default function Card() {
   return (
@@ -35,7 +36,9 @@ export default function Card() {
             </p>
 
             {/* Button */}
-           <Button title='See All' />
+         <Link to={`/category/${item.slug}`}>
+  <Button title="See All" />
+</Link>
 
           </div>
         ))}

@@ -12,14 +12,14 @@ import Footer from '../Footer/Footer'
 export default function Home() {
   return (
     <>
-      <Header />
+      
       <Banner />
       <Category />
       <Products />
      <Discount />
      <Process />
      <CustomerSaying />
-     <Footer />
+    
     </>
   )
 }
